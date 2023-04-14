@@ -39,12 +39,13 @@ module.exports = {
       filename: 'remoteEntry.js',
       remotes: {
         store: 'store',
+        cart: 'cart',
       },
       exposes: {
         './Header': './src/header',
         './Footer': './src/footer',
       },
-      shared: ['react', 'react-dom', 'single-spa-react']
+      shared: []
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
