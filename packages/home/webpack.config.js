@@ -54,7 +54,9 @@ module.exports = {
       exposes: {
         './fruit': './src/fruit'
       },
-      shared: []
+      shared: {
+        react: '18.2.0'
+      }
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html'
